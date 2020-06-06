@@ -1,3 +1,4 @@
+
 describe 'CashRegister' do
   let(:cash_register) { CashRegister.new }
   let(:cash_register_with_discount) { CashRegister.new(20) }
@@ -72,6 +73,7 @@ describe 'CashRegister' do
       new_register.add_item("tomato", 1.76, 3)
       expect(new_register.items).to eq(["eggs", "tomato", "tomato", "tomato"])
     end
+    
   end
 
   describe '#void_last_transaction' do
